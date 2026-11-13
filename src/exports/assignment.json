@@ -1,0 +1,43 @@
+{
+ "mssv": "2A202603332",
+ "ten": "PhamVanDuong",
+ "pool_version": "d04-k5-v2",
+ "cvat_user": "duong123",
+ "project": "d04-keypoint",
+ "persons": [
+  "000000027565.jpg",
+  "000000196283.jpg",
+  "000000292999.jpg",
+  "000000431893.jpg",
+  "000000463932.jpg",
+  "000000030960.jpg",
+  "000000122199.jpg",
+  "000000469061.jpg",
+  "000000431988.jpg",
+  "000000518966.jpg",
+  "000000007281.jpg",
+  "000000272026.jpg"
+ ],
+ "faces": [
+  "face_421231.jpg",
+  "face_496353.jpg",
+  "face_559185.jpg",
+  "face_145621.jpg",
+  "face_185015.jpg",
+  "face_143959.jpg",
+  "face_99874.jpg",
+  "face_490361.jpg"
+ ],
+ "tasks": {
+  "persons": {
+   "task_id": 38,
+   "job_id": 38,
+   "task_name": "persons-PhamVanDuong"
+  },
+  "faces": {
+   "task_id": 39,
+   "job_id": 39,
+   "task_name": "faces-PhamVanDuong"
+  }
+ }
+}
