@@ -84,7 +84,7 @@ Tổng hợp số lỗi theo mã:
 | 1|2 |0 |0 |0 |5 |
 
 Điểm còn phân vân giữa `v = 1` và `v = 0` (ghi cả hai lựa chọn và lý do chọn):
-Những điểm mà cơ thể còn trong khung hình, tuy nhiên không thể ước lượng được vị trí
+Những điểm mà cơ thể còn trong khung hình, tuy nhiên không thể ước lượng được vị trí.
 ...
 
 ## 5. Kiểm file xuất và kết quả tự kiểm (CP4)
@@ -93,13 +93,13 @@ Tự kiểm tay trong file JSON:
 
 | File | Người / mặt kiểm (ảnh, thứ tự) | Số phần tử `keypoints` | Điểm `outside` ra `v = 0`, `occluded` ra `v = 1`? | `num_keypoints` khớp? |
 |---|---|---:|---|---|
-| `HoVaTen_persons.zip` | | | | |
-| `HoVaTen_persons.zip` | | | | |
-| `HoVaTen_faces.zip` | | | | |
+| `PhamVanDuong_persons.zip` |000000030960.jpg, Person 1 (id=4) |51 |có |có |
+| `PhamVanDuong_persons.zip` | 	000000030960.jpg, Person 2 (id=5)| 51|có |có |
+| `PhamVanDuong_faces.zip` | 	face_143959.jpg, Face 1 (id=1)|39 |không có điểm cần kiểm tra |có |
 
-Sau khi xuất, CVAT ghi `occluded` thành `v = ___` và `outside` thành `v = ___`. Tọa độ của điểm `outside` trong file là `0, 0` hay tọa độ cũ? ___
+Sau khi xuất, CVAT ghi `occluded` thành `v = __1_` và `outside` thành `v = _0__`. Tọa độ của điểm `outside` trong file là `0, 0`, không phải tọa độ cũ.
 
-Hai job đã chuyển sang completed trên CVAT? Có / Không
+Hai job đã chuyển sang completed trên CVAT? Có
 
 Dán phần **TÓM TẮT** in ra từ `src/check_submission.py`:
 
@@ -131,19 +131,22 @@ Các `[CẢNH BÁO]` còn giữ nguyên và lý do:
 
    ![Label person](images/1_label_person.png)
 
+ Nguồn ảnh: COCO val2017.
 2. Một người quay lưng đã gán, cờ đã đặt:
 
    ![Người quay lưng](images/2_nguoi_quay_lung.png)
 
+ Nguồn ảnh: COCO val2017.
 3. Một khuôn mặt đã gán 13 điểm, phóng to vùng mắt:
 
    ![Khuôn mặt phóng to](images/3_mat_phong_to.png)
 
+Nguồn ảnh: Wikimedia Commons.
+
 4. Một đoạn JSON xuất của một người:
 
-   ![JSON export](images/4_json_export.png)
 
-Nguồn ảnh: COCO val2017 / Wikimedia Commons.
+   ![JSON export](images/4_json_export.png)
 
 ## 7. Tự đánh giá
 
